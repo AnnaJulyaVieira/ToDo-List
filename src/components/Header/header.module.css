@@ -1,0 +1,106 @@
+.header {
+  background: #c9c9c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: relative;
+}
+
+.newTaskForm {
+  position: absolute;
+  height: 54px;
+  bottom: -27px;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  gap: 8px;
+  padding: 0 1rem;
+}
+
+.newTaskForm input {
+  height: 100%;
+  flex: 1;
+  color: #fff;
+  background: #262626;
+  border: 1px solid #0D0D0D;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.newTaskForm input::placeholder {
+  color: #808080;
+}
+
+.newTaskForm button {
+  height: 100%;
+  padding: 0 16px;
+  border: none;
+  color: #fff;
+  background-color: #4e4e4e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.posicaoFoto {
+  left: 20%; /* Posição em relação à largura do elemento pai */
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fotos {
+  flex-grow: 1;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+  margin-left: 120px;
+}
+
+.nossaDupla {
+  position: absolute;
+  top: 25%;
+}
+
+.input {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background: red;
+}
+
+/* Estilos para telas pequenas (max-width: 768px) */
+@media (max-width: 768px) {
+  .posicaoFoto {
+    left: 5%; /* Posição ajustada para telas pequenas */
+  }
+
+  .fotos {
+    height: 100px; /* Tamanho ajustado para telas pequenas */
+    width: 100px;
+    margin-left: 60px;
+  }
+}
+
+/* Estilos para telas muito pequenas (max-width: 480px) */
+@media (max-width: 480px) {
+  .posicaoFoto {
+    left: 2%; /* Posição ajustada para telas muito pequenas */
+  }
+
+  .fotos {
+    height: 50px; /* Tamanho ajustado para telas muito pequenas */
+    width: 50px;
+    margin-left: 30px;
+  }
+
+  .header {
+    height: 300px; /* Ajuste de altura para telas muito pequenas */
+  }
+}
